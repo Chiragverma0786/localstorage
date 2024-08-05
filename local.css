@@ -1,0 +1,114 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    position: relative;
+    height: 30vh;
+    width: 20vw;
+    background-color: aliceblue;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    border-radius: 20px;
+}
+
+.form input{
+    height: 2vh;
+    width: 80%;
+    display: flex;
+    position: relative;
+    padding-left: 1vw;
+    border-radius: 20px;
+    height: 5vh;
+}
+
+.form button{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: orangered;
+    color: aliceblue;
+    border: none;
+    border-radius: 20px;
+    height: 5vh;
+    width: 60%;
+    cursor: pointer;
+    transition: 0.4s
+}
+
+.popup{
+    position: absolute;
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.423);
+    align-items: center;
+    justify-content: center;
+}
+
+.pop{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    height: 10vh;
+    width: 30vw;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.pop button{
+    height: 5vh;
+    width: 5vw;
+    background-color: orangered;
+    border-radius: 20px;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background-color: red;
+}
+
+@media only screen and (max-width : 600px) {
+    .form{
+        width: 90%;
+        height: 50vh;
+    }
+
+    .pop{
+        width: 80%;
+        height: 15vh;
+    }
+
+    .pop button{
+        width: 17vh;
+    }
+
+    .form input{
+        width: 80%;
+        display: flex;
+        position: relative;
+        padding-left: 4vw;
+    }
+}
