@@ -14,8 +14,14 @@ function submitData(){
         var userName = id.value;
         var passName = pass.value;
         
+        var storedUser = localStorage.getItem("id : " + userName);
+        if(storedUser){
+            alert("Username Already Exists!");
+            id.value = "";
+            pass.value = "";
+        }
+        else{
         localStorage.setItem("id : " + userName, "Password : " + passName);
-
         popUp.style.display = "flex";
         message.addEventListener("click", function(){
             popUp.style.display = "none";
@@ -23,6 +29,6 @@ function submitData(){
 
         id.value = "";
         pass.value = "";
-        
+    }
     }
 }
